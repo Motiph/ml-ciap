@@ -61,11 +61,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'claudespeed21333$webhook',
-        'USER': 'claudespeed21333',
-        'PASSWORD': 'Atelacreiste33',
-        'HOST': 'claudespeed21333.mysql.pythonanywhere-services.com',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'database.sqlite3',
     }
 }
 
@@ -110,11 +107,11 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = "/home/claudespeed21333/webhook/mysite/media"
+MEDIA_ROOT = "media"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = "/home/claudespeed21333/webhook/mysite/static"
+STATIC_ROOT = "static"
 
 import mimetypes
 mimetypes.add_type("text/css", ".css", True)
